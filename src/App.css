@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.tech-icon{
+    top: -100px;
+}
+
+.mobile-navbar{
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+}
+
+.mobile-navbar.open{
+    left: 0;
+}
+
+.mobile-navbar.closed{
+    left: -100%;
+}
+
+.blob{
+    background-image: url('../public/images/mohit.png');
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px;
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 0, 253, 0.1);
+    border: black solid 3px;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
